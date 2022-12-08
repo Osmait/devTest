@@ -1,0 +1,86 @@
+:root {
+  --blanco: #fff;
+  --negor: #111111;
+  --gris: #343a40;
+
+  --fuentePrincipal: "Roboto", sans-serif;
+}
+/* Globales */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: #22272e;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 1rem 0 4rem 0;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+}
+.Contenido {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_anunn {
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_book {
+  scroll-snap-align: center;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 300px;
+  width: 400px;
+  display: grid;
+  min-height: 50px;
+  border: solid 1px;
+}
+.fila {
+  border: solid 1px;
+  height: 100px;
+}
